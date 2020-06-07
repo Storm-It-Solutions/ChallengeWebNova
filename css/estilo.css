@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     color:ghostwhite;
+    font-family: sans-serif;
 }
 
 
@@ -152,6 +153,10 @@ section.sec1{
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
 }
 
 section.sec2{
@@ -159,6 +164,10 @@ section.sec2{
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
 }
 
 section.sec3{
@@ -166,6 +175,10 @@ section.sec3{
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
 }
 
 section.sec4{
@@ -173,6 +186,10 @@ section.sec4{
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
 }
 
 section.sec5{
@@ -180,6 +197,10 @@ section.sec5{
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
 }
 
 footer.rodape{
@@ -187,5 +208,27 @@ footer.rodape{
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
+
+}
+
+
+/*Definiçoes elementos */
+
+section h2 a{
+  text-decoration: none;
+  font-size: 8vh;
+  font-weight: 800;
+
+}
+
+section h2{
+  width: 100%;
+  height: 10.5%;
+}
+
+section p{
+  height: 85%;
+  width: 55%;
+  font-size: 4vh;
 
 }
