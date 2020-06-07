@@ -102,12 +102,14 @@ label #sign-one, label #sign-two{
     color: rgb(4,173,145);
 }
 
-@media(max-width:870px){
+@media(max-width:600px){
     label .bars{
         display:block;
         width: 65px;
         height: 65px;
         background-image: url(../img/icons_menu/icone-tres-barrinhas.png);
+        left: 85%;
+        top: 2%;
         position: fixed;
     }
 
@@ -155,6 +157,15 @@ label #sign-one, label #sign-two{
         height: 65px;
         background-image: url(./../img/icons_menu/icone-fechar.png);
         position: fixed;
+        left: 85%;
+        top: 2%;
+    }
+
+
+
+    .membro figure{
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -182,27 +193,7 @@ footer{
 
 }
 
-section.sec4{
-    background: url(./../img/imgs/section4.jpg);
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
 
-}
-
-.sec4 h2{
-    margin: 0;
-    padding-left: 0;
-    text-align: -webkit-center;
-}
-
-.sec4 .membro{
-    width: 25%;
-    height: 26vh;
-}
 
 
 
@@ -349,6 +340,13 @@ section.sec3{
 
 /*Sessão 4*/
 
+
+.membro figure{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
 .membro figure img{
     border-radius: 100%;
     width: 45%;
@@ -356,7 +354,7 @@ section.sec3{
 }
 
 .membro figure figcaption{
-    float: right;
+    /*float: right;*/
     text-align: -webkit-match-parent;
     width: 55%;
     font-size: 2vh;
@@ -364,6 +362,29 @@ section.sec3{
     padding-top: 6%;
 
 }
+
+section.sec4{
+    background: url(./../img/imgs/section4.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.sec4 h2{
+    margin: 0;
+    padding-left: 0;
+    text-align: -webkit-center;
+}
+
+.sec4 .membro{
+    width: 25%;
+    height: 26vh;
+}
+
 
 .membro-1, .membro-4{
     margin-left: 2%;
@@ -465,6 +486,7 @@ section.sec5{
 /* rodape */
 
 .rodape{
+    width: 100%;
     border-top: 0.1vh solid #fff;
     background-color: rgb(4,173,145);
     background-position: center center;
@@ -479,7 +501,7 @@ section.sec5{
 .rodape p{
     padding-left: 10%;
     flex-basis: 50%;
-    font-size: 3vh;
+    font-size: 2vh;
     text-align: center;
     font-style: italic;
     margin-top:5%;
