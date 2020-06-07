@@ -1,0 +1,197 @@
+@charset "UTF-8";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+/*menu responsivo*/
+
+nav{
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+nav h1{
+    position: absolute;
+    width: 200px;
+    top: 8px;
+    left: 5%;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+nav ul{
+    float: right;
+    margin-right: 25px;
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 50px;
+    margin: 0 15px;
+}
+
+nav ul li a{
+    position: relative;
+    padding: 5px 0;
+    color: #fff;
+    font-size: 10px;
+    text-decoration: none;
+    transition: 1s border-spacing;
+}
+
+nav ul li a:hover{
+
+    border-top: 2px solid aquamarine;
+    border-bottom: 2px solid aquamarine;
+}
+
+
+
+label #sign-one, label #sign-two{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 50px;
+    margin-right: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+#res-menu{
+    display: none;
+}
+
+.banner-area{
+    background: linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(#);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+nav
+
+@media(max-width:870px){
+    label .bars{
+        display:block;
+        width: 65px;
+        height: 65px;
+        background-image: url(../img/icons_menu/icone-tres-barrinhas.png);
+    }
+    nav ul{
+        position:fixed;
+        width:100%;
+        height: 100vh;
+        background:blue;
+        top: 100px;
+        left: 100%;
+        text-align: center;
+        transition: .5s;
+        z-index: 10;
+    }
+    nav ul li{
+        display: block;
+        margin: 40px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    #res-menu:checked ~ ul{
+        left: 0;
+    }
+    #res-menu:checked ~ label .bars{
+        display:none;
+        transition: .5s;
+    }
+    #res-menu:checked ~ label .times{
+        display:block;
+        width: 65px;
+        height: 65px;
+    }
+
+    #res-menu:checked ~ label .times{
+        background-image: url(./../img/icons_menu/icone-fechar.png);
+    }
+}
+
+
+
+
+
+
+/* Efeito do paralax*/
+
+header, section{
+    width: 100%;
+    height: 100vh;
+}
+footer{
+    width: 100%;
+    height: 20vh;
+}
+
+header.head{
+    background: url(./../img/imgs/header.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+section.sec1{
+    background: url(./../img/imgs/section1.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.sec2{
+    background: url(./../img/imgs/section2.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.sec3{
+    background: url(./../img/imgs/section3.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.sec4{
+    background: url(./../img/imgs/section4.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.sec5{
+    background-color: rgba(23,23,23);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+footer.rodape{
+    background-color: rgb(4,173,145);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+
