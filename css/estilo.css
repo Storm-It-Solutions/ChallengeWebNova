@@ -168,39 +168,9 @@ header.head{
 
 }
 
-section.sec1{
-    background: url(./../img/imgs/section1.jpg);
 
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
 
-}
 
-section.sec2{
-    background: url(./../img/imgs/section2.jpg);
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-}
-
-section.sec3{
-    background: url(./../img/imgs/section3.jpg);
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-}
 
 section.sec4{
     background: url(./../img/imgs/section4.jpg);
@@ -233,18 +203,6 @@ section.sec4{
 
 
 
-section.sec5{
-    background-color: rgb(23,23,23);
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-}
-
-
 /*Definiçoes elementos */
 
 section h2 a{
@@ -272,27 +230,60 @@ section p{
 
 }
 
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
 
 
 /*Sessão 1*/
 
-.sec1 .texto{
+
+section.sec1{
+    background: url(./../img/imgs/section1.jpg);
+
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+
+
+}
+
+.overlay .texto{
     width: 80%;
     float: right;
     margin-left: 10%;
 }
 
-.sec1 .texto p{
+.overlay .texto p{
     text-align: -webkit-right;
 }
-
 
 .sec1 h2{
     text-align: -webkit-left;
 }
 
+
+
+
 /*Sessão 2*/
 
+section.sec2{
+    background: url(./../img/imgs/section2.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
 .sec2 .texto{
     width: 80%;
     float: left;
@@ -302,7 +293,6 @@ section p{
 .sec2 .texto p{
     text-align: -webkit-left;
 }
-
 
 .sec2 h2{
     text-align: -webkit-right;
@@ -314,7 +304,16 @@ section p{
 
 /*Sessão 3*/
 
+section.sec3{
+    background: url(./../img/imgs/section3.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 
+}
 
 .sec3 .texto{
     width: 80%;
@@ -326,10 +325,12 @@ section p{
     text-align: -webkit-right;
 }
 
-
 .sec3 h2{
     text-align: -webkit-left;
 }
+
+
+
 
 /*Sessão 4*/
 
@@ -362,13 +363,22 @@ section p{
 
 /*Sessão 5*/
 
+section.sec5{
+    background-color: rgb(23,23,23);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
 
 .sec5 h2 a{
     color: rgb(6,234,195);
     border-bottom: 0.1vh solid rgb(6,234,195);
 
 }
-
 
 .sec5 .texto{
     float: left;
