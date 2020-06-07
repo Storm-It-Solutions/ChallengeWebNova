@@ -31,21 +31,22 @@ nav ul{
     float: right;
     margin-right: 25px;
     list-style: none;
+    margin-top: 7%;
 }
 
 nav ul li{
     display: inline-block;
     line-height: 50px;
-    margin: 0 15px;
+    margin: 0 1vw;
 }
 
 nav ul li a{
     position: relative;
     padding: 5px 0;
     color: #fff;
-    font-size: 10px;
     text-decoration: none;
     transition: 1s border-spacing;
+    font-size: 4vh;
 }
 
 nav ul li a:hover{
@@ -53,8 +54,6 @@ nav ul li a:hover{
     border-top: 2px solid aquamarine;
     border-bottom: 2px solid aquamarine;
 }
-
-
 
 label #sign-one, label #sign-two{
     font-size: 30px;
@@ -78,7 +77,28 @@ label #sign-one, label #sign-two{
     height: 100vh;
 }
 
-nav
+
+#logo-b2w img{
+    height: 25vh;
+    margin-left: 5%;
+}
+
+.frase{
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.frase h1{
+    font-size: 14vh;
+    color: #fff;
+    width: 40%;
+}
+
+.frase p{
+    width: 50%;
+    font-size: 4vh;
+    color: rgb(4,173,145);
+}
 
 @media(max-width:870px){
     label .bars{
@@ -150,6 +170,7 @@ header.head{
 
 section.sec1{
     background: url(./../img/imgs/section1.jpg);
+
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
@@ -192,6 +213,26 @@ section.sec4{
 
 }
 
+.sec4 h2{
+    margin: 0;
+    padding-left: 0;
+    text-align: -webkit-center;
+}
+
+.sec4 .membro{
+    width: 25%;
+    height: 26vh;
+}
+
+
+
+
+
+
+
+
+
+
 section.sec5{
     background-color: rgb(23,23,23);
     background-position: center center;
@@ -203,36 +244,238 @@ section.sec5{
 
 }
 
-footer.rodape{
-    background-color: rgb(4,173,145);
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
-
-}
-
 
 /*Definiçoes elementos */
 
 section h2 a{
-  text-decoration: none;
-  font-size: 8vh;
-  font-weight: 800;
+    text-decoration: none;
+    font-size: 8vh;
+    font-weight: 800;
+    border-bottom: 0.1vh solid #fff;
 
 }
 
 section h2{
-  width: 100%;
-  height: 10.5%;
-  padding-top: 3%;
-  padding-left: 3%;
+    width: 100%;
+    height: 10.5%;
+    padding-top: 3%;
+    padding-left: 3%;
 }
 
 section p{
-  height: 85%;
-  width: 65%;
-  font-size: 4vh;
-  float: right;
-  text-align: justify;
+    height: 85%;
+    width: 100%;
+    font-size: 4vh;
+    /*float: right;*/
+     text-align: -webkit-left;
+    margin-left: 5%;
+
+}
+
+
+
+/*Sessão 1*/
+
+.sec1 .texto{
+    width: 80%;
+    float: right;
+    margin-left: 10%;
+}
+
+.sec1 .texto p{
+    text-align: -webkit-right;
+}
+
+
+.sec1 h2{
+    text-align: -webkit-left;
+}
+
+/*Sessão 2*/
+
+.sec2 .texto{
+    width: 80%;
+    float: left;
+    margin-left: 2%;
+}
+
+.sec2 .texto p{
+    text-align: -webkit-left;
+}
+
+
+.sec2 h2{
+    text-align: -webkit-right;
+    margin-right: 5%;
+}
+
+
+
+
+/*Sessão 3*/
+
+
+
+.sec3 .texto{
+    width: 80%;
+    float: right;
+    margin-left: 10%;
+}
+
+.sec3 .texto p{
+    text-align: -webkit-right;
+}
+
+
+.sec3 h2{
+    text-align: -webkit-left;
+}
+
+/*Sessão 4*/
+
+
+
+.membro figure img{
+    border-radius: 100%;
+    width: 45%;
+    height: 20vh;
+}
+
+.membro figure figcaption{
+    float: right;
+    text-align: justify;
+    width: 55%;
+    font-size: 2vh;
+    padding-left: 2%;
+    padding-top: 6%;
+
+}
+
+.membro-1, .membro-4{
+    margin-left: 2%;
+}
+
+.membro{
+    margin-right: 5%;
+}
+
+
+/*Sessão 5*/
+
+
+.sec5 h2 a{
+    color: rgb(6,234,195);
+    border-bottom: 0.1vh solid rgb(6,234,195);
+
+}
+
+
+.sec5 .texto{
+    float: left;
+    width: 30%;
+    margin-left: 2%;
+}
+
+.forms{
+    float: right;
+    width: 68%;
+}
+
+.forms .formulario{
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+
+
+.inputs{
+    width: 60%;
+    margin-left: 20%;
+}
+
+.inputs input{
+    margin-bottom: 5%;
+    border: 2px  solid rgb(6,234,195);
+    border-radius: 3vh;
+    padding: 1%;
+    width: 100%;
+    height: 5.5vh;
+    color: #000;
+    font-size: 2vh;
+
+}
+
+.inputs textarea{
+    border: 2px  solid rgb(6,234,195);
+    border-radius: 1vh;
+    padding: 1%;
+    width: 100%;
+    height: 30.5vh;
+    color: #000;
+    font-size: 2vh;
+}
+
+
+.inputs button{
+    color: #fff;
+    width: 30%;
+    border-radius: 3vh;
+    background-color: rgb(6,234,195);
+    border: 2px  solid #fff;
+    height: 5vh;
+    font-weight: bold;
+    margin-left: 35%;
+    font-size: 2vh;
+    margin-top: 2%;
+}
+
+
+
+/* rodape */
+
+.rodape{
+    border-top: 0.1vh solid #fff;
+    background-color: rgb(4,173,145);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+
+.rodape p{
+    padding-left: 10%;
+    flex-basis: 50%;
+    font-size: 3vh;
+    text-align: center;
+    font-style: italic;
+    margin-top:5%;
+}
+
+.logo-storm img {
+    flex-grow: 1;
+    height: 18vh;
+    margin-top: 3%;
+}
+
+
+
+.redes-socias{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-left: 10%;
+}
+
+
+.icones img{
+    height: 12vh;
+    margin-top: 30%;
+    padding-left: 5%;
 
 }
